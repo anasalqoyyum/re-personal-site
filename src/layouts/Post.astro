@@ -10,7 +10,7 @@ const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource } = Astro.p
 const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
 const { text: readingTime } = calcReadingTime(Astro.props.rawContent())
 const { pathname } = Astro.url
-const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/main/src/pages${pathname.replace(/\/$/, '')}.md`
+const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/master/src/pages${pathname.replace(/\/$/, '')}.md`
 ---
 
 <Layout title={title}>
