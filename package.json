@@ -1,0 +1,23 @@
+{
+  "name": "re-personal-site",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/image": "0.3.6",
+    "@astrojs/mdx": "0.10.2",
+    "@astrojs/preact": "1.0.2",
+    "@astrojs/tailwind": "1.0.0",
+    "@tailwindcss/typography": "0.5.4",
+    "astro": "1.0.7",
+    "date-fns": "2.29.2",
+    "preact": "10.6.5",
+    "reading-time": "1.5.0"
+  }
+}

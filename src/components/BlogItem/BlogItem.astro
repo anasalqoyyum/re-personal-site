@@ -1,0 +1,47 @@
+---
+import { format, parse } from 'date-fns'
+import Image from 'components/Image/Image.astro'
+import LangBadge from 'components/LangBadge/LangBadge.astro'
+
+type Props = {
+	title: string
+	summary: string
+	thumbnail: string
+	thumbnailAlt: string
+	thumbnailSource: string
+	publishedAt: string
+	url?: string
+	lang?: string
+}
+
+const { title, summary, thumbnail, thumbnailAlt, url, lang, publishedAt } = Astro.props
+const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
+---
+
+<article
+	class="relative border px-4 py-3 border-slate-100 dark:border-slate-700 rounded-lg transition-shadow duration-200 hover:shadow-xl dark:transform dark:transition-transform dark:hover:-translate-y-1"
+>
+	<div class="flex gap-4">
+		<Image src={thumbnail} width={128} height={128} loading="lazy" class="rounded" alt={thumbnailAlt} />
+		<div>
+			<div class="flex flex-col sm:flex-row justify-between mb-2">
+				<h3 class="flex mb-1 sm:mb-0 text-lg sm:text-xl font-bold w-full text-slate-900 dark:text-slate-100">
+					<a href={url} class="block-link transition-opacity opacity-80 hover:opacity-100">
+						{
+							lang && (
+								<span class="order-2 self-start ml-auto sm:order-none sm:ml-0 sm:mr-2">
+									<LangBadge>{lang}</LangBadge>
+								</span>
+							)
+						}
+						{title}
+					</a>
+				</h3>
+			</div>
+			<p class="text-slate-600 dark:text-slate-400 max-w-2xl">{summary}</p>
+			<p class="text-slate-600 dark:text-slate-400 text-xs font-normal mt-12">
+				{publishDate}
+			</p>
+		</div>
+	</div>
+</article>

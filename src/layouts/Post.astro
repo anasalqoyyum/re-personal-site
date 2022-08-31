@@ -1,0 +1,55 @@
+---
+import calcReadingTime from 'reading-time'
+import { format, parse } from 'date-fns'
+
+import photo from 'assets/images/photo.jpg'
+import Layout from 'layouts/Layout.astro'
+import Image from 'components/Image/Image.astro'
+
+const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource } = Astro.props.content
+const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
+const { text: readingTime } = calcReadingTime(Astro.props.rawContent())
+const { pathname } = Astro.url
+const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/main/src/pages${pathname.replace(/\/$/, '')}.md`
+---
+
+<Layout title={title}>
+	<article class="my-6" item-prop="blogPost" item-scope item-type="https://schema.org/BlogPosting">
+		<h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" item-prop="name headline">
+			{title}
+		</h1>
+		<header class="flex items-center mb-8 sm:mb-10">
+			<figure
+				class="bg-slate-200 w-8 h-8 sm:w-6 sm:h-6 mr-4 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-slate-200 dark:ring-slate-800"
+			>
+				<Image src={photo} height={48} width={48} alt="Anas Alqoyyum" />
+			</figure>
+			<div class="flex flex-col sm:flex-row sm:justify-between sm:w-full text-sm">
+				<div class="text-slate-600 dark:text-slate-400">
+					<span item-prop="author" item-scope item-type="https://schema.org/Person">
+						<span item-prop="name">Anas Alqoyyum</span>
+					</span>
+					at
+					<time item-prop="datePublished" date-time={publishedAt}>
+						{publishDate}
+					</time>
+				</div>
+				<div class="text-slate-500">
+					{readingTime}
+				</div>
+			</div>
+		</header>
+		<section class="prose dark:prose-dark w-full mb-6 mx-auto" item-prop="articleBody">
+			<Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto" />
+			<div class="text-slate-500 text-xs text-center">
+				Source: {thumbnailSource}
+			</div>
+			<slot />
+		</section>
+		<footer class="max-w-[65ch] w-full mx-auto flex justify-between text-slate-600 dark:text-slate-400">
+			<div class="text-sm">
+				<a class="transition inline-block border-b border-transparent hover:border-slate-600" href={githubFileUrl}>Edit on GitHub</a>
+			</div>
+		</footer>
+	</article>
+</Layout>
