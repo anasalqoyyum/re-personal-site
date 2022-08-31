@@ -18,6 +18,10 @@
     "astro": "1.0.7",
     "date-fns": "2.29.2",
     "preact": "10.6.5",
-    "reading-time": "1.5.0"
+    "reading-time": "1.5.0",
+    "rehype-autolink-headings": "6.1.1",
+    "rehype-code-titles": "1.1.0",
+    "rehype-prism": "2.1.3",
+    "rehype-slug": "5.0.1"
   }
 }
