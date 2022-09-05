@@ -8,4 +8,4 @@ thumbnailAlt: 'Art of Hatsune Miku celebrating her 15th anniversary by @kieed232
 thumbnailSource: 'https://twitter.com/kieed23232/status/1564652751941820416'
 ---
 
-Hey, Congrats You're Here. You might be the first one who visit this post (who knows?). Want a reward, what about a cake? Here you go 🍰 
+Hey, Congrats You're Here. You might be the first one who visit this post (who knows?). Want a reward, what about a cake? Here you go 🍰
