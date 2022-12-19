@@ -12,6 +12,10 @@ interface RemoteImageProps extends TransformOptions, astroHTML.JSX.ImgHTMLAttrib
   format?: OutputFormat
 }
 
+interface ImageProps {
+  className?: string
+}
+
 export type Props = LocalImageProps | RemoteImageProps
 
 const attrs = await getImage({ format: 'webp', ...(Astro.props as Props) })

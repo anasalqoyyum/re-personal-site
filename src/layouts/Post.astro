@@ -6,18 +6,48 @@ import photo from 'assets/images/photo.jpg'
 import Layout from 'layouts/Layout.astro'
 import Image from 'components/Image/Image.astro'
 
-const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource } = Astro.props.content
+const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource, isMultiLang, lang } = Astro.props.content
 const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
 const { text: readingTime } = calcReadingTime(Astro.props.rawContent())
 const { pathname } = Astro.url
 const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/master/src/pages${pathname.replace(/\/$/, '')}.md`
+
+const buildUrl = () => {
+  switch (lang) {
+    case 'ID':
+      return pathname.replace('id', 'en')
+    case 'EN':
+      return pathname.replace('en', 'id')
+    default:
+      return pathname
+  }
+}
+const altLang = () => {
+  switch (lang) {
+    case 'ID':
+      return 'English'
+    case 'EN':
+      return 'Indonesia'
+    default:
+      return 'English'
+  }
+}
 ---
 
 <Layout title={title}>
   <article class="my-6" item-prop="blogPost" item-scope item-type="https://schema.org/BlogPosting">
-    <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6" item-prop="name headline">
-      {title}
-    </h1>
+    <div class="flex flex-col sm:flex-row justify-between">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight sm:mb-6 sm:w-3/4" item-prop="name headline">
+        {title}
+      </h1>
+      {
+        isMultiLang && (
+          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 mb-4 sm:w-1/4 sm:text-end sm:self-center" href={buildUrl()}>
+            Read in {altLang()}?
+          </a>
+        )
+      }
+    </div>
     <header class="flex items-center mb-8 sm:mb-10">
       <figure
         class="bg-slate-200 w-8 h-8 sm:w-6 sm:h-6 mr-4 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-slate-200 dark:ring-slate-800"
@@ -39,8 +69,8 @@ const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/mas
         </div>
       </div>
     </header>
-    <section class="prose dark:prose-dark w-full mb-6 mx-auto" item-prop="articleBody">
-      <Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto" />
+    <section class="prose dark:prose-dark prose-invert w-full mb-6 mx-auto" item-prop="articleBody">
+      <Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto block" />
       <div class="text-slate-500 text-xs text-center break-all">
         Source: {thumbnailSource}
       </div>

@@ -9,16 +9,17 @@ type PostFrontMatter = {
   thumbnail: string
   thumbnailAlt: string
   thumbnailSource: string
+  lang?: string
 }
 
 const title = 'Blog'
 const description = "I'll try to do write as much as possible"
-const posts = await Astro.glob<PostFrontMatter>('./blog/*.md')
+const posts = await Astro.glob<PostFrontMatter>('./blog/en/*.md')
 
-posts.sort((a, b) => Date.parse(a.frontmatter.publishedAt) - Date.parse(b.frontmatter.publishedAt))
+posts.sort((a, b) => Date.parse(b.frontmatter.publishedAt) - Date.parse(a.frontmatter.publishedAt))
 ---
 
-<Layout {title} {description}>
+<Layout title={title} description={description}>
   <svg class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <symbol id="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <path
@@ -29,11 +30,11 @@ posts.sort((a, b) => Date.parse(a.frontmatter.publishedAt) - Date.parse(b.frontm
     </symbol>
   </svg>
   <h1 class="font-bold text-4xl sm:text-5xl tracking-tight mb-6 sm:mb-10">Blog</h1>
-  <ul class="space-y-8 sm:space-y-12">
+  <ul class="space-y-8">
     {
       posts.map(({ frontmatter, url }) => (
         <li>
-          <BlogItem {url} {...frontmatter} />
+          <BlogItem url={url} {...frontmatter} />
         </li>
       ))
     }
