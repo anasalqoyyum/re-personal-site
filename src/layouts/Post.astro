@@ -36,13 +36,13 @@ const altLang = () => {
 
 <Layout title={title}>
   <article class="my-6" item-prop="blogPost" item-scope item-type="https://schema.org/BlogPosting">
-    <div class="flex flex-col sm:flex-row justify-between">
-      <h1 class="text-3xl md:text-4xl font-bold tracking-tight sm:mb-6 sm:w-3/4" item-prop="name headline">
+    <div class="flex flex-col sm:flex-row justify-between mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight sm:w-3/4" item-prop="name headline">
         {title}
       </h1>
       {
         isMultiLang && (
-          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 mb-4 sm:w-1/4 sm:text-end sm:self-center" href={buildUrl()}>
+          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 sm:w-1/4 sm:text-end sm:self-center" href={buildUrl()}>
             Read in {altLang()}?
           </a>
         )
