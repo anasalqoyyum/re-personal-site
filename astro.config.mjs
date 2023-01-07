@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.anasalqoyyum.com',
+  site: 'https://www.anasalqoyyum.dev',
   integrations: [tailwind(), preact(), image(), mdx()],
   markdown: {
     syntaxHighlight: false,
