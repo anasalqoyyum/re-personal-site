@@ -1,7 +1,7 @@
 ---
 layout: layouts/Post.astro
-title: Types of Luck and its mechanism
-summary: I was fascinated by Blue Lock chapter 87, where Jinpachi Ego explains the mechanism of luck in the football world
+title: Types of "luck" and its mechanism
+summary: I was fascinated by blue lock chapter 87, where Jinpachi Ego explains the mechanism of luck in the football world
 publishedAt: '2022-12-19'
 thumbnail: 'https://pbs.twimg.com/media/Et3kwNWXMAQn8FA?format=jpg&name=small'
 thumbnailAlt: 'Not that luck'
@@ -21,7 +21,7 @@ Now consider the second case. Suppose that you are offered a job from LinkedIn. 
 
 In both cases, were that simply pure luck? It “just happened” that you got chosen by the rich guy or the talent scouter. Numerous others could have been sitting in your place, but you simply got chosen. The goddess of fortune – if such things even exist in the first place – smiled upon you. There is no more to it.
 
-Except there is a profound difference between the first and second case, and we don’t understand enough about “luck” that it is unduly reduced to ***“pure coincidence”***.
+Except there is a profound difference between the first and second case, and we don’t understand enough about “luck” that it is unduly reduced to **_“pure coincidence”_**.
 
 ## What is the difference between the first and second cases then?
 

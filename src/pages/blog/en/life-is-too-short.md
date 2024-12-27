@@ -1,6 +1,6 @@
 ---
 layout: layouts/Post.astro
-title: Life Is Too Short
+title: Life is too short
 summary: I think many of us take life for granted.
 publishedAt: '2023-01-21'
 thumbnail: 'https://i.kym-cdn.com/photos/images/newsfeed/002/479/930/dcf.jpg'

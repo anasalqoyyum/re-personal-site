@@ -1,7 +1,7 @@
 ---
 layout: layouts/Post.astro
 title: Congratulations
-summary: You Found Me
+summary: You found me.
 publishedAt: '2022-08-30'
 thumbnail: 'https://pbs.twimg.com/media/FbbDTK0UEAEuevf?format=jpg&name=4096x4096'
 thumbnailAlt: 'Art of Hatsune Miku celebrating her 15th anniversary by @kieed23232 on Twitter'

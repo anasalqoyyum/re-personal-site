@@ -27,7 +27,7 @@ const altLang = () => {
     case 'ID':
       return 'English'
     case 'EN':
-      return 'Indonesia'
+      return 'Bahasa Indonesia'
     default:
       return 'English'
   }
@@ -42,7 +42,7 @@ const altLang = () => {
       </h1>
       {
         isMultiLang && (
-          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 sm:w-1/4 sm:text-end sm:self-center" href={buildUrl()}>
+          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 sm:w-1/4 sm:text-end sm:self-center underline" href={buildUrl()}>
             Read in {altLang()}?
           </a>
         )
@@ -69,14 +69,14 @@ const altLang = () => {
         </div>
       </div>
     </header>
-    <section class="prose dark:prose-dark prose-invert w-full mb-6 mx-auto" item-prop="articleBody">
+    <section class="prose dark:prose-dark prose-invert w-full mb-6 mx-auto max-w-none font-sans" item-prop="articleBody">
       <Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto block" />
       <div class="text-slate-500 text-xs text-center break-all">
         Source: {thumbnailSource}
       </div>
       <slot />
     </section>
-    <footer class="max-w-[65ch] w-full mx-auto flex justify-between text-slate-600 dark:text-slate-400">
+    <footer class="w-full mx-auto flex justify-between text-slate-600 dark:text-slate-400">
       <div class="text-sm">
         <a class="transition inline-block border-b border-transparent hover:border-slate-600" href={githubFileUrl}>Edit on GitHub</a>
       </div>

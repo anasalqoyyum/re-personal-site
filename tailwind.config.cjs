@@ -41,8 +41,8 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.slate.300'),
-            '--tw-prose-quotes': theme('colors.slate.300'),
+            color: theme('colors.slate.200'),
+            '--tw-prose-quotes': theme('colors.slate.200'),
             a: {
               color: theme('colors.sky.400'),
               transition: 'color 0.15s',
