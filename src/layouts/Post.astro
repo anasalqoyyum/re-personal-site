@@ -42,7 +42,10 @@ const altLang = () => {
       </h1>
       {
         isMultiLang && (
-          <a class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 sm:w-1/4 sm:text-end sm:self-center underline" href={buildUrl()}>
+          <a
+            class="text-slate-500 dark:text-slate-300 transition-colors duration-200 text-sm mt-6 sm:w-1/4 sm:text-end sm:self-center underline"
+            href={buildUrl()}
+          >
             Read in {altLang()}?
           </a>
         )
@@ -72,7 +75,7 @@ const altLang = () => {
     <section class="prose dark:prose-dark prose-invert w-full mb-6 mx-auto max-w-none font-sans" item-prop="articleBody">
       <Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto block" />
       <div class="text-slate-500 text-xs text-center break-all">
-        Source: {thumbnailSource}
+        {thumbnailSource}
       </div>
       <slot />
     </section>
