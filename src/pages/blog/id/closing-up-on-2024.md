@@ -69,6 +69,8 @@ _Kai no Kiseki_ memberikan semua yang aku harapkan: cerita mendalam, karakter ko
 
 Terakhir, _Kai no Kiseki_ adalah game terobosan Falcom dan saya terkejut dengan ending ceritanya. Saya tahu apa yang akan terjadi, tetapi… ketika endingnya terjadi, saya masih terpukul. Tak perlu dikatakan lagi, air mata saya pun menetes. Sungguh sebuah mahakarya.
 
+Alat OCR: [Gaminik](https://www.gaminik.net/)
+
 <figure>
     <img src="https://darknowns.s-ul.eu/z9sPJpvA"
          alt="Kai no Kiseki after-ending title screen">

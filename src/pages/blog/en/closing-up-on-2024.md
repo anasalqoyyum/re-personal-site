@@ -73,6 +73,8 @@ Kai no Kiseki itself was everything I’d hoped for: rich storytelling, complex 
 
 Lastly, Kai no Kiseki is a Falcom's breakthrough game and I got caught off guard by the ending. I knew what was coming and yet… when it finally happened, it still struck me hard. Needless to say, tears were shed. What a masterpiece.
 
+The OCR tools used: [Gaminik](https://www.gaminik.net/)
+
 <figure>
     <img src="https://darknowns.s-ul.eu/z9sPJpvA"
          alt="Kai no Kiseki after-ending title screen">
