@@ -3,9 +3,8 @@ layout: layouts/Post.astro
 title: Life is too short
 summary: I think many of us take life for granted.
 publishedAt: '2023-01-21'
-thumbnail: 'https://i.kym-cdn.com/photos/images/newsfeed/002/479/930/dcf.jpg'
-thumbnailAlt: 'Ghost staring at you'
-thumbnailSource: 'https://i.kym-cdn.com/photos/images/newsfeed/002/479/930/dcf.jpg'
+thumbnail: '/assets/bochi.jpg'
+thumbnailAlt: 'Bochi Depression'
 lang: EN
 ---
 
@@ -29,8 +28,6 @@ Life is too short for such things.
 It's your choice how you spend your time on Earth, but not for how long.
 It's your choice what you do and what you say, but not what results.
 It's not your choice if you are treated with kindness, but you can choose to be kind.
-
----
 
 Life is too short to let your anxieties control you.
 

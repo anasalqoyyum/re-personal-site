@@ -9,7 +9,6 @@ export default defineConfig({
   site: 'https://www.anasalqoyyum.dev',
   integrations: [tailwind(), preact(), image(), mdx()],
   markdown: {
-    syntaxHighlight: false,
     rehypePlugins: ['rehype-slug', 'rehype-autolink-headings', 'rehype-code-titles', 'rehype-prism']
   }
 })

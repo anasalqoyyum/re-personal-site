@@ -5,8 +5,9 @@ import { format, parse } from 'date-fns'
 import photo from 'assets/images/photo.jpg'
 import Layout from 'layouts/Layout.astro'
 import Image from 'components/Image/Image.astro'
+import type { PostFrontMatter } from 'pages/blog.astro'
 
-const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource, isMultiLang, lang } = Astro.props.content
+const { title, publishedAt, thumbnail, thumbnailAlt, thumbnailSource, isMultiLang, lang } = Astro.props.content as PostFrontMatter
 const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
 const { text: readingTime } = calcReadingTime(Astro.props.rawContent())
 const { pathname } = Astro.url
@@ -37,7 +38,7 @@ const altLang = () => {
 <Layout title={title}>
   <article class="my-6" item-prop="blogPost" item-scope item-type="https://schema.org/BlogPosting">
     <div class="flex flex-col sm:flex-row justify-between mb-6">
-      <h1 class="text-3xl md:text-4xl font-bold tracking-tight sm:w-3/4" item-prop="name headline">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight w-3/4 md:w-[85%]" item-prop="name headline">
         {title}
       </h1>
       {
@@ -73,7 +74,7 @@ const altLang = () => {
       </div>
     </header>
     <section class="prose dark:prose-dark prose-invert w-full mb-6 mx-auto max-w-none font-sans" item-prop="articleBody">
-      <Image src={thumbnail} height={256} width={512} alt={thumbnailAlt} class="mx-auto block" />
+      <img src={thumbnail} alt={thumbnailAlt} class="mx-auto block" />
       <div class="text-slate-500 text-xs text-center break-all">
         {thumbnailSource}
       </div>

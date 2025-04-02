@@ -125,6 +125,11 @@ img {
   @apply m-0 mb-2 text-xl no-underline sm:text-2xl;
 }
 
+.dark\:prose-dark :where(pre):not(:where([class~='not-prose'] *)) {
+  color: #e2e8f0;
+  background-color: #1e293b !important;
+}
+
 .prose .anchor {
   @apply invisible ml-1 align-middle no-underline;
   color: inherit;
