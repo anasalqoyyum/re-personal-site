@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: 'Retrospective: 2023'
 summary: Goodbye 2023, hello 2024
 publishedAt: '2023-12-31'
-thumbnail: 'https://darknowns.s-ul.eu/l8wbVzfT'
+thumbnail: '/assets/retro_2023.png'
 thumbnailAlt: 'A 2023 folder and a 2024 folder, and 2024 folder about to be opened'
 thumbnailSource: 'https://unsplash.com/photos/a-close-up-of-a-cell-phone-screen-with-numbers-on-it-mis7syjThUU'
 lang: EN

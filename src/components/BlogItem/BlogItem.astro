@@ -1,17 +1,9 @@
 ---
-import { format, parse } from "date-fns";
-import type { PostFrontMatter } from "pages/blog.astro";
+import { format, parse } from 'date-fns'
+import type { PostFrontMatter } from 'pages/blog.astro'
 
-const {
-	title,
-	summary,
-	url,
-	publishedAt,
-} = Astro.props as PostFrontMatter & { url: string };
-const publishDate = format(
-	parse(publishedAt, "yyyy-MM-dd", new Date()),
-	"MMMM d, yyyy",
-);
+const { title, summary, url, publishedAt } = Astro.props as PostFrontMatter & { url: string }
+const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d, yyyy')
 ---
 
 <article class="group border-b dark:border-gray-700 pb-6 transition-all">

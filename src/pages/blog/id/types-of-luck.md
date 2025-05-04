@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: Jenis Keberuntungan dan Mekanismenya
 summary: I was fascinated by Blue Lock chapter 87, where Jinpachi Ego explains the mechanism of luck in the football world
 publishedAt: '2022-12-19'
-thumbnail: 'https://pbs.twimg.com/media/Et3kwNWXMAQn8FA?format=jpg&name=small'
+thumbnail: '/assets/luck.jpg'
 thumbnailAlt: 'Not that luck'
 thumbnailSource: 'Black Clover (go watch it, its a great shonen anime)'
 lang: ID
@@ -21,7 +21,7 @@ Sekarang pertimbangkan kasus kedua. Misalkan Anda ditawari pekerjaan dari Linked
 
 Dalam kedua kasus, apakah itu murni keberuntungan? Itu "kebetulan" bahwa Anda dipilih oleh orang kaya atau pencari bakat. Banyak orang lain yang mungkin duduk di tempat Anda, tetapi Anda terpilih begitu saja. Dewi keberuntungan – jika hal-hal seperti itu memang ada – tersenyum padamu. Tidak ada lagi untuk itu.
 
-Kecuali ada perbedaan besar antara kasus pertama dan kedua, dan kami tidak cukup mengerti tentang "keberuntungan" yang terlalu direduksi menjadi ***"kebetulan murni"***.
+Kecuali ada perbedaan besar antara kasus pertama dan kedua, dan kami tidak cukup mengerti tentang "keberuntungan" yang terlalu direduksi menjadi **_"kebetulan murni"_**.
 
 ## Apa perbedaan antara kasus pertama dan kedua?
 
@@ -31,7 +31,7 @@ Kita mungkin akrab dengan kasus pertama, tetapi merasa aneh dengan kasus kedua. 
 
 ---
 
-![Blue Lock chapter 87](https://i.imgur.com/da8WF4f.png)
+![Blue Lock chapter 87](/assets/luck_2.png)
 
 ---
 

@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: 'Doing thing and not doing thing'
 summary: Self reminder to do the thing
 publishedAt: '2025-01-02'
-thumbnail: 'https://darknowns.s-ul.eu/S8adlQAI'
+thumbnail: '/assets/doing_thing.webp'
 thumbnailAlt: 'tangled cat'
 thumbnailSource: 'The logo image was taken from Reddit.'
 lang: EN

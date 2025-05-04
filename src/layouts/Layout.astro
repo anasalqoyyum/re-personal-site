@@ -1,42 +1,42 @@
 ---
-import "styles/global.css";
-import ActiveLink from "components/ActiveLink/ActiveLink.astro";
+import 'styles/global.css'
+import ActiveLink from 'components/ActiveLink/ActiveLink.astro'
 
 export type Props = {
-	title?: string;
-	type?: string;
-	description?: string;
-	overrideTitle?: boolean;
-	canonical?: string;
-	date?: string;
-	sharingImageUrl?: string;
-};
-
-const { pathname } = Astro.url;
-const url = Astro.url.toString();
-const isHome = pathname === "/";
-const baseUrl = "https://anasalqoyyum.dev";
-
-let {
-	title = "Anas Alqoyyum",
-	sharingImageUrl = "/og-image.png",
-	type = "website",
-	description = `Hey, my name is Anas Alqoyyum. I'm a Software Engineer mostly focuses on Frontend Engineer in which primarily revolves around React and TypeScript.`,
-	canonical,
-	date,
-} = Astro.props as Props;
-
-if (!isHome) {
-	title = `${title} - Anas Alqoyyum`;
+	title?: string
+	type?: string
+	description?: string
+	overrideTitle?: boolean
+	canonical?: string
+	date?: string
+	sharingImageUrl?: string
 }
 
-sharingImageUrl = `${baseUrl}${sharingImageUrl}`;
+const { pathname } = Astro.url
+const url = Astro.url.toString()
+const isHome = pathname === '/'
+const baseUrl = 'https://anasalqoyyum.dev'
+
+let {
+	title = 'Anas Alqoyyum',
+	sharingImageUrl = '/og-image.png',
+	type = 'website',
+	description = `Hey, my name is Anas Alqoyyum. I'm a Software Engineer mostly focuses on Frontend Engineer in which primarily revolves around React and TypeScript.`,
+	canonical,
+	date
+} = Astro.props as Props
+
+if (!isHome) {
+	title = `${title} - Anas Alqoyyum`
+}
+
+sharingImageUrl = `${baseUrl}${sharingImageUrl}`
 
 const SOCIAL_LINK = [
-	["GitHub", "https://github.com/anasalqoyyum/"],
-	["LinkedIn", "https://www.linkedin.com/in/anasalqoyyum/"],
-	["X (formerly Twitter)", "https://www.twitter.com/sanaalqoyyum/"],
-];
+	['GitHub', 'https://github.com/anasalqoyyum/'],
+	['LinkedIn', 'https://www.linkedin.com/in/anasalqoyyum/'],
+	['X (formerly Twitter)', 'https://www.twitter.com/sanaalqoyyum/']
+]
 ---
 
 <!DOCTYPE html>

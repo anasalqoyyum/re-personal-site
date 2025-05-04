@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: 'Menutup tahun 2024'
 summary: Tahun ini agak tidak jelas, tapi setidaknya dapat dilewati
 publishedAt: '2024-12-27'
-thumbnail: 'https://darknowns.s-ul.eu/Rdg5DvHp'
+thumbnail: '/assets/2024.jpg'
 thumbnailAlt: '2024 dicoret, and 2025 lebih bahagia'
 thumbnailSource: 'gambar sendiri :)'
 lang: ID
@@ -49,12 +49,12 @@ Di tengah tantangan dan tanggung jawab tahun ini, aku menemukan sumber kebahagia
 Aku juga berhasil mencapai _Rainbow Rating_ di Maimai dan Chunithm tahun ini.
 
 <figure>
-    <img src="https://darknowns.s-ul.eu/c6Zvy6MA"
+    <img src="/assets/rainbow_maimai.png"
          alt="Maimai rainbow rating">
     <figcaption classname="text-slate-500 text-center break-all">Maimai rainbow rating.</figcaption>
 </figure>
 <figure>
-    <img src="https://darknowns.s-ul.eu/gPiasAqW"
+    <img src="/assets/rainbow_chunithm.png"
          alt="Chunithm rainbow rating">
     <figcaption classname="text-slate-500 text-center break-all">Chunithm rainbow rating.</figcaption>
 </figure>
@@ -72,7 +72,7 @@ Terakhir, _Kai no Kiseki_ adalah game terobosan Falcom dan saya terkejut dengan 
 Alat OCR: [Gaminik](https://www.gaminik.net/)
 
 <figure>
-    <img src="https://darknowns.s-ul.eu/z9sPJpvA"
+    <img src="/assets/kai_title.png"
          alt="Kai no Kiseki after-ending title screen">
     <figcaption classname="text-slate-500 text-center break-all">Kai no Kiseki after-ending title screen. peak cinema. masterpiece.</figcaption>
 </figure>
@@ -86,5 +86,5 @@ Menjelang 2025, aku belum menemukan kata-kata penutup yang sempurna untuk tahun 
 Song of the year: **Mitsuo Singa - 女神の唄 (Song of the Goddess)**
 
 <a href="https://www.youtube.com/watch?v=uB79Y7glNPk" target="_blank">
- <img src="https://darknowns.s-ul.eu/TwNMz5Qk" alt="Mitsuo Singa - 女神の唄 (Song of the Goddess)" width="360" height="180" border="10" />
+ <img src="/assets/kai_song.png" alt="Mitsuo Singa - 女神の唄 (Song of the Goddess)" width="360" height="180" border="10" />
 </a>

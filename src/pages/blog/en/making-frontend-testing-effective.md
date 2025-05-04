@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: 'Making Frontend Testing Effective (or even Enjoyable)'
 summary: Test like users, not internals.
 publishedAt: '2024-11-30'
-thumbnail: 'https://imgs.xkcd.com/comics/software_testing_day.png'
+thumbnail: '/assets/software_testing_day.png'
 thumbnailAlt: 'XKCD: Software Testing Day'
 thumbnailSource: 'xkcd comic'
 lang: EN

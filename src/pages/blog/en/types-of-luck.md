@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: Types of "luck" and its mechanism
 summary: I was fascinated by blue lock chapter 87, where Jinpachi Ego explains the mechanism of luck in the football world
 publishedAt: '2022-12-19'
-thumbnail: 'https://pbs.twimg.com/media/Et3kwNWXMAQn8FA?format=jpg&name=small'
+thumbnail: '/assets/luck.jpg'
 thumbnailAlt: 'Not that luck'
 thumbnailSource: 'Black Clover (go watch it, its a great shonen anime)'
 lang: EN
@@ -31,7 +31,7 @@ We might be familiar with the first case, but find it strange with the second ca
 
 ---
 
-![Blue Lock chapter 87](https://i.imgur.com/da8WF4f.png)
+![Blue Lock chapter 87](/assets/luck_2.png)
 
 ---
 

@@ -3,7 +3,7 @@ layout: layouts/Post.astro
 title: 'Closing up on 2024'
 summary: This year was a little bit messy, but thankfully we got through
 publishedAt: '2024-12-27'
-thumbnail: 'https://darknowns.s-ul.eu/Rdg5DvHp'
+thumbnail: '/assets/retro_2024.png'
 thumbnailAlt: '2024 being slashed up, and 2025 being more happy'
 thumbnailSource: 'my own drawing :)'
 lang: EN
@@ -51,12 +51,12 @@ These visits weren’t just about the game, though. They were about finding a sp
 I also hits Rainbow Rating in both Maimai and Chunithm this year.
 
 <figure>
-    <img src="https://darknowns.s-ul.eu/c6Zvy6MA"
+    <img src="/assets/rainbow_maimai.png"
          alt="Maimai rainbow rating achieved">
     <figcaption classname="text-slate-500 text-center break-all">Maimai rainbow rating achieved.</figcaption>
 </figure>
 <figure>
-    <img src="https://darknowns.s-ul.eu/gPiasAqW"
+    <img src="/assets/rainbow_chunithm.png"
          alt="Chunithm rainbow rating achieved">
     <figcaption classname="text-slate-500 text-center break-all">Chunithm rainbow rating achieved.</figcaption>
 </figure>
@@ -76,7 +76,7 @@ Lastly, Kai no Kiseki is a Falcom's breakthrough game and I got caught off guard
 The OCR tools used: [Gaminik](https://www.gaminik.net/)
 
 <figure>
-    <img src="https://darknowns.s-ul.eu/z9sPJpvA"
+    <img src="/assets/kai_title.png"
          alt="Kai no Kiseki after-ending title screen">
     <figcaption classname="text-slate-500 text-center break-all">Kai no Kiseki after-ending title screen. peak cinema. masterpiece.</figcaption>
 </figure>
@@ -90,5 +90,5 @@ As 2025 approaches, I find myself unsure of the perfect closing words for this y
 Song of the year: **Mitsuo Singa - 女神の唄 (Song of the Goddess)**
 
 <a href="https://www.youtube.com/watch?v=uB79Y7glNPk" target="_blank">
- <img src="https://darknowns.s-ul.eu/TwNMz5Qk" alt="Mitsuo Singa - 女神の唄 (Song of the Goddess)" width="360" height="180" border="10" />
+ <img src="/assets/kai_song.png" alt="Mitsuo Singa - 女神の唄 (Song of the Goddess)" width="360" height="180" border="10" />
 </a>
