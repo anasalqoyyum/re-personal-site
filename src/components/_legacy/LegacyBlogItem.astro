@@ -3,15 +3,15 @@ import { format, parse } from 'date-fns'
 import LangBadge from 'components/LangBadge/LangBadge.astro'
 
 type Props = {
-	title: string
-	summary: string
-	thumbnail: string
-	thumbnailAlt: string
-	thumbnailSource: string
-	publishedAt: string
-	url?: string
-	lang?: string
-	langInfo?: string
+  title: string
+  summary: string
+  thumbnail: string
+  thumbnailAlt: string
+  thumbnailSource: string
+  publishedAt: string
+  url?: string
+  lang?: string
+  langInfo?: string
 }
 
 const { title, summary, thumbnail, thumbnailAlt, url, lang, publishedAt, langInfo } = Astro.props
@@ -45,4 +45,3 @@ const publishDate = format(parse(publishedAt, 'yyyy-MM-dd', new Date()), 'MMMM d
     <img src={thumbnail} width={128} height={128} loading="lazy" class="rounded object-cover w-32 sm:w-60 h-auto" alt={thumbnailAlt} />
   </div>
 </article>
-

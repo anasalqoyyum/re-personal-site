@@ -3,21 +3,21 @@ import BlogItem from 'components/BlogItem/BlogItem.astro'
 import Layout from 'layouts/Layout.astro'
 
 export type PostFrontMatter = {
-	title: string
-	summary: string
-	publishedAt: string
-	/**
-	 * This can be a local image or a remote image
-	 * If it's a local image, it will be loaded from the public/assets folder
-	 * If it's a remote image, it will be loaded from the url (https://example.com/image.jpg)
-	 */
-	thumbnail: string
-	thumbnailAlt: string
-	thumbnailSource: string
-	lang?: string
-	langInfo?: string
-	isMultiLang?: boolean
-	hidden?: boolean
+  title: string
+  summary: string
+  publishedAt: string
+  /**
+   * This can be a local image or a remote image
+   * If it's a local image, it will be loaded from the public/assets folder
+   * If it's a remote image, it will be loaded from the url (https://example.com/image.jpg)
+   */
+  thumbnail: string
+  thumbnailAlt: string
+  thumbnailSource: string
+  lang?: string
+  langInfo?: string
+  isMultiLang?: boolean
+  hidden?: boolean
 }
 
 const title = 'Blog'

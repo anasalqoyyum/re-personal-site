@@ -14,24 +14,24 @@ const { pathname } = Astro.url
 const githubFileUrl = `https://github.com/anasalqoyyum/re-personal-site/edit/master/src/pages${pathname.replace(/\/$/, '')}.md`
 
 const buildUrl = () => {
-	switch (lang) {
-		case 'ID':
-			return pathname.replace('id', 'en')
-		case 'EN':
-			return pathname.replace('en', 'id')
-		default:
-			return pathname
-	}
+  switch (lang) {
+    case 'ID':
+      return pathname.replace('id', 'en')
+    case 'EN':
+      return pathname.replace('en', 'id')
+    default:
+      return pathname
+  }
 }
 const altLang = () => {
-	switch (lang) {
-		case 'ID':
-			return 'English'
-		case 'EN':
-			return 'Bahasa Indonesia'
-		default:
-			return 'English'
-	}
+  switch (lang) {
+    case 'ID':
+      return 'English'
+    case 'EN':
+      return 'Bahasa Indonesia'
+    default:
+      return 'English'
+  }
 }
 ---
 

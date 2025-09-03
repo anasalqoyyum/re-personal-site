@@ -2,18 +2,18 @@
 import { getImage, ImageMetadata, TransformOptions, OutputFormat } from '@astrojs/image'
 
 interface LocalImageProps extends Omit<TransformOptions, 'src'>, Omit<astroHTML.JSX.ImgHTMLAttributes, 'src' | 'width' | 'height'> {
-	src: ImageMetadata | Promise<{ default: ImageMetadata }>
+  src: ImageMetadata | Promise<{ default: ImageMetadata }>
 }
 
 interface RemoteImageProps extends TransformOptions, astroHTML.JSX.ImgHTMLAttributes {
-	src: string
-	width: number
-	height: number
-	format?: OutputFormat
+  src: string
+  width: number
+  height: number
+  format?: OutputFormat
 }
 
 interface ImageProps {
-	className?: string
+  className?: string
 }
 
 export type Props = LocalImageProps | RemoteImageProps
